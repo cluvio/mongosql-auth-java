@@ -17,7 +17,7 @@
 
 package org.mongodb.mongosql.auth.plugin;
 
-import com.mysql.jdbc.Buffer;
+import com.mysql.mongo.jdbc.Buffer;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;

@@ -17,11 +17,11 @@
 
 package org.mongodb.mongosql.auth.plugin;
 
-import com.mysql.jdbc.AuthenticationPlugin;
-import com.mysql.jdbc.Buffer;
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.SQLError;
-import com.mysql.jdbc.StringUtils;
+import com.mysql.mongo.jdbc.AuthenticationPlugin;
+import com.mysql.mongo.jdbc.Buffer;
+import com.mysql.mongo.jdbc.Connection;
+import com.mysql.mongo.jdbc.SQLError;
+import com.mysql.mongo.jdbc.StringUtils;
 
 import javax.security.sasl.SaslClient;
 import javax.security.sasl.SaslException;
@@ -86,6 +86,10 @@ public class MongoSqlAuthenticationPlugin implements AuthenticationPlugin {
                 // ignore
             }
         }
+    }
+
+    @Override
+    public void reset() {
     }
 
     @Override
